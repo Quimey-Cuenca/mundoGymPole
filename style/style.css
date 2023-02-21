@@ -7,7 +7,7 @@
 }
 img{
     width: 100%;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .padre{
@@ -66,6 +66,7 @@ img{
 }
 .navBar{
     display: flex;
+    flex-direction: column;
     transition-property: all;
     transition-duration: 2s;
 
@@ -131,50 +132,21 @@ main{
 }
 .padreGrid{
     display: grid;
-    grid-template-areas:
-    "header header header"
-    "main main main"
-    "padre padre padre"
-    "queeselpole sport fitness"
-    "exotic  exotic coreografico"
-    "historia historia historia"
-    "horarios horarios horarios"
-    "footer footer footer";
-    grid-template-columns: 33% 34% 33%;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "padre"
+    "queeselpole"
+    "sport"
+    "fitness"
+    "exotic"
+    "coreografico"
+    "historia"
+    "horarios"
+    "footer";
 }
-/* max-width: 576 mobile */
-@media screen and (max-width: 576px) {
-    .padreGrid{
-        grid-template-areas: 
-        "header"
-        "main"
-        "padre"
-        "queeselpole"
-        "sport"
-        "fitness"
-        "exotic"
-        "coreografico"
-        "historia"
-        "horarios"
-        "footer";
-    }
-}
-/* max-width: 768 table */
-@media screen and (max-width: 1024px) {
-    .padreGrid{
-        grid-template-areas: 
-        "header header"
-        "main main"
-        "padre padre"
-        "queeselpole queeselpole"
-        "sport fitness"
-        "exotic coreografico"
-        "historia historia"
-        "horarios horarios"
-        "footer footer";
-        grid-template-columns: 50% 50%;
-    }
-}
+
 
 .tela{
     grid-area: tela;
@@ -191,12 +163,13 @@ main{
 .gridTela{
     display: grid;
     grid-template-areas: 
-    "header header"
-    "main main"
-    "tela lira"
-    "horariotela horariolira"
-    "footer footer";
-    grid-template-columns: 1fr 1fr;
+    "header"
+    "main"
+    "tela"
+    "horariotela"
+    "lira"
+    "horariolira"
+    "footer";
 }
 
 
@@ -225,7 +198,7 @@ a{
 h1{
     text-align: center;
     font-family: 'Rubik Mono One', sans-serif;
-    font-size: 65px;
+    font-size: 30px;
 
 }
 h2{
@@ -251,6 +224,7 @@ h3{
 }
 .footer{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 footer{
@@ -268,3 +242,61 @@ footer{
     justify-content: center;
 }
 
+@media(min-width: 576px){
+    .padreGrid{
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "padre padre"
+        "queeselpole queeselpole"
+        "sport fitness"
+        "exotic coreografico"
+        "historia historia"
+        "horarios horarios"
+        "footer footer";
+        
+    }
+    h1{
+        font-size: 50px;
+    }
+}
+
+@media(min-width: 768px){
+    .padreGrid{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "padre padre padre"
+        "queeselpole sport sport"
+        "fitness exotic coreografico"
+        "historia historia historia"
+        "horarios horarios horarios"
+        "footer footer footer";
+    }
+    .gridTela{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "tela lira"
+        "horariotela horariolira"
+        "footer footer";
+    }
+    .navBar{
+        display: flex;
+        flex-direction: row;
+        transition-property: all;
+        transition-duration: 2s;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    h1{
+        font-size: 65px;
+    }
+}
