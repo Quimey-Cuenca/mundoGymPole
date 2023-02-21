@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <ul class="navBar">
+                <li class="boton"> <a href="../index.html">POLE</a> </li>
+                <li class="boton"> <a href="./telaylira.html">TELA Y LIRA</a> </li>
+                <li class="boton"> <a href="./funcional.html">ENTRENAMIENTO FUNCIONAL</a> </li>
+                <li class="boton"> <a href="./flexibilidad.html">FLEXIBILIDAD</a> </li>
+                <li class="boton"> <a href="./contacto.html">CONTACTO</a> </li>
+            </ul>
+        </nav>
+    </header>  <!--  shift + alt + a -->
+    <main>
+        <h1>CONTACTATE CON NOSOTROS</h1>
+        <h2>Desafiate a vos mismo</h2>
+        <form class="formulario">
+            <fieldset>
+                <legend>Dejanos tu duda o consulta</legend>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="Nombre" id="Nombre" required>
+                </div>
+                <br><br>
+                <div>
+                    <label for="">Sexo</label>
+                    <select name="sexo" id="sexo">
+                        <option value="indistinto">Indistinto</option>
+                        <option value="masc">Masculino</option>
+                        <option value="fem">Femenino</option>
+                    </select>
+                </div>
+                <br><br>
+                <div>
+                    <label for="edad">Edad</label>
+                    <input type="number" name="edad" id="edad">
+                </div>
+                <br><br>
+                <div>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="mail" id="mail">
+                </div>
+                <br><br>
+                <div>
+                    <label for="comentario">Dejanos tu consulta</label><br><br>
+                    <textarea name="comentario" id="comentario" cols="60" rows="10"
+                    placeholder="quiero información sobre..." required></textarea>
+                </div>
+                <br><br>
+                <div>
+                    <h3>Como nos conociste</h3>
+                    <input type="checkbox" name="insta" id="insta">
+                    <label for="insta">Instagram</label>
+                    <input type="checkbox" name="amigo" id="amigo">
+                    <label for="amigo">Por un amigo</label>
+                    <input type="checkbox" name="publicidad" id="publicidad">
+                    <label for="publicidad">publicidad</label>
+                </div>
+                <br><br>
+            <input type="submit" value="ENVIAR">
+
+            </fieldset>
+        </form>
+
+    </main>
+   
+    <footer>
+        <h3>Encontranos también en las redes</h3>
+        <div class="footer">
+            <a href="#header">ARRIBA</a>
+            <div class="redes">
+                <a href="https://web.telegram.org/z/" target="_blank"><img class="icon"
+                        src="../img/icons8-aplicación-telegrama.svg" alt=""> telegram</a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="icon" src="../img/icons8-instagram.svg"
+                        alt=""> instagram</a>
+                <a href="https://www.facebook.com/" target="_blank"><img class="icon" src="../img/icons8-facebook.svg"
+                        alt=""> facebook</a>
+            </div>
+            <div class="ubicacion">
+                <h4>- MUNDO POLE GYM -</h4>
+                <h4>Av. Pellegrini xxxx, Rosario, Argentina</h4>
+                <h4>mundogympolexxx@gmail.com</h4>
+                <h4>+54 9 3416 230xxx</h4>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

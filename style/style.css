@@ -1,0 +1,272 @@
+/* selector: etiqueta, class, id */
+/* propiedad: valor */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&family=Roboto&family=Roboto+Condensed&family=Rubik+Mono+One&family=Sriracha&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.padre{
+    grid-area: padre;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.seccion{
+    background: rgb(15,21,33);
+    background: linear-gradient(56deg, rgba(15,21,33,1) 0%, rgba(64,74,93,1) 46%, rgba(16,21,32,1) 94%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 15px;
+    border-inline-end-color: blue;
+    padding: 15px;
+}
+.actividades{
+    font-family: 'Sriracha';
+}
+
+.video{
+    display: flex;
+    margin: 15px;
+    padding: 15px;
+    justify-content: space-around;
+}
+
+.horarios{
+    grid-area: horarios;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+.tablas{
+    grid-area: tablas;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.formulario{
+    padding: 10px;
+    margin: 10px;
+}
+.ubicacion{
+    text-align: end;
+}
+.navBar{
+    display: flex;
+    transition-property: all;
+    transition-duration: 2s;
+
+    
+}
+.boton:hover{
+    transform: scale(1.25);
+}
+body{
+    background: rgb(40,40,40);
+    background: linear-gradient(90deg, rgba(40,40,40,1) 0%, rgba(48,255,232,1) 26%, rgba(36,217,224,1) 42%, rgba(0,7,198,1) 100%);
+}
+
+
+p{
+    font-family: 'Sriracha';
+    font-weight: 300;
+    font-style: normal;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: auto; /* espacio entre letras*/
+    word-spacing: ;  /* espacio entre palabras*/
+    color: rgb(185, 185, 185);
+    
+}
+
+header{
+    grid-area: header;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 600;
+    font-size: 25px;
+    background: rgb(15,21,33);
+    background: linear-gradient(56deg, rgba(15,21,33,1) 0%, rgba(64,74,93,1) 46%, rgba(16,21,32,1) 94%);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: stretch;
+    
+}
+main{
+    grid-area: main;
+}
+.queeselpole{
+    grid-area: queeselpole;
+}
+.sport{
+    grid-area: sport;
+}
+.fitness{
+    grid-area: fitness;
+}
+.exotic{
+    grid-area: exotic;
+}
+.coreografico{
+    grid-area: coreografico;
+}
+.historia{
+    grid-area: historia;
+}
+.padreGrid{
+    display: grid;
+    grid-template-rows: auto*7 50px;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "padre padre padre"
+    "queeselpole sport fitness"
+    "exotic  exotic coreografico"
+    "historia historia historia"
+    "horarios horarios horarios"
+    "footer footer footer";
+    grid-template-columns: 33% 34% 33%;
+}
+/* max-width: 576 mobile */
+@media screen and (max-width: 576px) {
+    .padreGrid{
+        grid-template-areas: 
+        "header"
+        "main"
+        "padre"
+        "queeselpole"
+        "sport"
+        "fitness"
+        "exotic"
+        "coreografico"
+        "historia"
+        "horarios"
+        "footer";
+        grid-template-columns: auto;
+    }
+}
+/* max-width: 768 table */
+@media screen and (max-width: 1024px) {
+    .padreGrid{
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "padre padre"
+        "queeselpole queeselpole"
+        "sport fitness"
+        "exotic coreografico"
+        "historia historia"
+        "horarios horarios"
+        "footer footer";
+        grid-template-columns: 50% 50%;
+    }
+}
+
+.tela{
+    grid-area: tela;
+}
+.lira{
+    grid-area: lira;
+}
+.horarioTela{
+    grid-area: horariotela;
+}
+.horarioLira{
+    grid-area: horariolira;
+}
+.gridTela{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "tela lira"
+    "horariotela horariolira"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+ul{
+    list-style-type: none;
+}
+ol{
+    list-style-type: none;
+}
+
+ul li{
+    margin: 2px 10px;
+    background: rgb(100,109,255);
+    background: linear-gradient(135deg, rgba(100,109,255,1) 13%, rgba(123,255,254,1) 52%, rgba(136,136,136,1) 93%);
+    
+}
+
+a{
+    text-decoration: none;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+}
+
+
+h1{
+    text-align: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 65px;
+
+}
+h2{
+    color: black;
+    padding: 20px;
+    border: 10px;
+    margin: 0px;
+    text-align: center;
+}
+
+h3{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.eslogan{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+.icon{
+    width: 48px;
+    height: 48px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background: rgb(16,24,40);
+    background: linear-gradient(79deg, rgba(16,24,40,1) 0%, rgba(57,69,92,1) 65%);
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
