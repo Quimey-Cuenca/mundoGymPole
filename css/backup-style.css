@@ -10,14 +10,14 @@ img{
     margin-top: 5px;
 }
 
-.padre{
-    grid-area: padre;
+.submenu{
+    grid-area: submenu;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px;
     justify-content: space-around;
-    background-color: black;
+    background-color: $color-fondo;
 }
 
 .seccion{
@@ -72,12 +72,39 @@ img{
 
     
 }
+.dropdown-menu{
+    background-color: rgb(0 0 0 / 60%);
+}
+.boton{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 7px;
+    padding: 6px;
+    background: rgb(100,109,255);
+    background: linear-gradient(135deg, rgba(100,109,255,1) 13%, rgba(123,255,254,1) 52%, rgba(136,136,136,1) 93%);
+}
+.boton2{
+    font-size: 20px;
+}
+.btn{
+    border: 0px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    font-weight: 500;
+}
 .boton:hover{
-    transform: scale(1.25);
+    transform: scale(1.1);
 }
 body{
-    background: rgb(40,40,40);
+    background-image: url(../img/pole-en-el-obelisco.jpg);
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /*  background: rgb(40,40,40);
     background: linear-gradient(90deg, rgba(40,40,40,1) 0%, rgba(48,255,232,1) 26%, rgba(36,217,224,1) 42%, rgba(0,7,198,1) 100%);
+    */
 }
 
 
@@ -97,7 +124,6 @@ p{
 header{
     grid-area: header;
     font-family: 'Bebas Neue', cursive;
-    font-weight: 600;
     font-size: 25px;
     background: rgb(15,21,33);
     background: linear-gradient(56deg, rgba(15,21,33,1) 0%, rgba(64,74,93,1) 46%, rgba(16,21,32,1) 94%);
@@ -180,17 +206,18 @@ ul{
 ol{
     list-style-type: none;
 }
-
+nav{
+    display: flex;
+    flex-direction: row;
+}
 nav ul li{
-    margin: 2px 10px;
-    background: rgb(100,109,255);
-    background: linear-gradient(135deg, rgba(100,109,255,1) 13%, rgba(123,255,254,1) 52%, rgba(136,136,136,1) 93%);
+    
     
 }
 
 a{
     text-decoration: none;
-    padding: 20px;
+    padding: 10px;
     color: rgb(0, 0, 0);
 }
 
@@ -222,6 +249,11 @@ h3{
     width: 48px;
     height: 48px;
 }
+.logo{
+    width: 58px;
+    height: 58px;
+    color: antiquewhite;
+}
 .footer{
     display: flex;
     flex-direction: column;
@@ -248,7 +280,7 @@ footer{
         grid-template-areas: 
         "header header"
         "main main"
-        "padre padre"
+        "submenu submenu"
         "queeselpole queeselpole"
         "sport fitness"
         "exotic coreografico"
@@ -268,7 +300,7 @@ footer{
         grid-template-areas: 
         "header header header"
         "main main main"
-        "padre padre padre"
+        "submenu submenu submenu"
         "queeselpole sport sport"
         "fitness exotic coreografico"
         "historia historia historia"

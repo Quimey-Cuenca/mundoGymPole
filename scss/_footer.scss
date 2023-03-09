@@ -1,0 +1,21 @@
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background: rgb(16,24,40);
+    background: linear-gradient(79deg, rgba(16,24,40,1) 0%, rgba(57,69,92,1) 65%);
+    .footer{ 
+        @include flex;
+    }
+}
+.icon{
+    width: 48px;
+    height: 48px;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
