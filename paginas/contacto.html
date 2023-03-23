@@ -63,55 +63,60 @@
         </nav>
     </header>  <!--  shift + alt + a -->
     <main>
-        <h1>CONTACTATE CON NOSOTROS</h1>
+        <h1>ESCRIBINOS, ESTAMOS PARA AYUDARTE</h1>
         <h2>Desafiate a vos mismo</h2>
-        <form class="formulario">
-            <fieldset>
-                <legend>Dejanos tu duda o consulta</legend>
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="Nombre" id="Nombre" required>
+        <div class="container">
+            <form class="row g-2 formulario">
+
+                <div class="col 12">
+                    <label for="Nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="Nombre" placeholder="escribe tu nombre">
                 </div>
-                <br><br>
-                <div>
-                    <label for="">Sexo</label>
-                    <select name="sexo" id="sexo">
+
+                <div class="col-12">
+                    <label for="" class="form-label" >Sexo</label>
+                    <select name="sexo" class="form-control" id="sexo">
                         <option value="indistinto">Indistinto</option>
                         <option value="masc">Masculino</option>
                         <option value="fem">Femenino</option>
                     </select>
                 </div>
-                <br><br>
-                <div>
-                    <label for="edad">Edad</label>
-                    <input type="number" name="edad" id="edad">
+
+                <div class="col-12">
+                    <label for="edad" class="form-label">Edad</label>
+                    <input type="number" name="edad" id="edad" class="form-control" placeholder="edad" >
                 </div>
-                <br><br>
-                <div>
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" name="mail" id="mail">
+                <div class="col-12">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="escribí tu correo electrónico">
                 </div>
-                <br><br>
-                <div>
-                    <label for="comentario">Dejanos tu consulta</label><br><br>
-                    <textarea name="comentario" id="comentario" cols="60" rows="10"
-                    placeholder="quiero información sobre..." required></textarea>
+                <div class="col-12">
+                    <label for="comentario" class="form-label">Dejanos tu consulta</label>
+                    <textarea name="comentario" id="comentario" class="form-control" placeholder="quiero información sobre..." required></textarea>
                 </div>
-                <br><br>
                 <div>
                     <h3>Como nos conociste</h3>
-                    <input type="checkbox" name="insta" id="insta">
-                    <label for="insta">Instagram</label>
-                    <input type="checkbox" name="amigo" id="amigo">
-                    <label for="amigo">Por un amigo</label>
-                    <input type="checkbox" name="publicidad" id="publicidad">
-                    <label for="publicidad">publicidad</label>
-                </div>
-                <br><br>
-            <input type="submit" value="ENVIAR">
+                    <div class="form-check" >
+                        <input type="checkbox" class="form-chek-input" name="insta" id="insta">
+                        <label for="insta">Instagram</label>
+                    </div>
+                    <div class="form-check"> 
+                        <input type="checkbox" class="form-chek-input" name="amigo" id="amigo">
+                        <label for="amigo">Por un amigo</label>
+                    </div>
+                    <div class="form-check" >
+                        <input type="checkbox" class="form-chek-input" name="publicidad" id="publicidad">
+                        <label for="publicidad">publicidad</label>
+                    </div>
 
-            </fieldset>
-        </form>
+                    <div class="col-12">
+                        <button type="submit" class="enviar btn-primary form-control">ENVIAR</button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
 
     </main>
    

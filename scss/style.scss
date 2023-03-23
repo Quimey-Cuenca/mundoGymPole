@@ -71,6 +71,7 @@ main{
         color: black;
     }
 }
+
 .seccion{
     background: rgb(15,21,33);
     background: linear-gradient(56deg, rgba(15,21,33,1) 0%, rgba(64,74,93,1) 46%, rgba(16,21,32,1) 94%);
@@ -82,6 +83,9 @@ main{
     padding: 8px;
     .actividades{
         background: $color-tema;
+        width: 225px;
+        height: 225px;
+
     }
     ol{
         li{
@@ -95,6 +99,7 @@ main{
     }
     ul{
         li{
+            list-style: none;
             text-decoration: none;
             color: aliceblue;
         }
@@ -108,6 +113,7 @@ main{
         margin-top: 5pxs;
     }
     .horarios{
+        
         width: 100%;
     }
     p{
@@ -130,9 +136,14 @@ section table tr{
 }
 
 .formulario{
+    margin: 10px;
     padding: 10px;
     border: black;
-
+    color: aliceblue;
+    background: $color-fondo;
+    .enviar{
+        background: $color-tema;
+    }
     }
     
 .submenu{

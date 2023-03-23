@@ -114,6 +114,8 @@ main h3 {
 }
 .seccion .actividades {
   background: linear-gradient(135deg, rgb(100, 109, 255) 13%, rgb(123, 255, 254) 52%, rgb(136, 136, 136) 93%);
+  width: 225px;
+  height: 225px;
 }
 .seccion ol li {
   color: black;
@@ -124,6 +126,7 @@ main h3 {
   border-color: black;
 }
 .seccion ul li {
+  list-style: none;
   text-decoration: none;
   color: aliceblue;
 }
@@ -158,8 +161,14 @@ section table tr {
 }
 
 .formulario {
+  margin: 10px;
   padding: 10px;
   border: black;
+  color: aliceblue;
+  background: linear-gradient(56deg, rgb(15, 21, 33) 0%, rgb(64, 74, 93) 46%, rgb(16, 21, 32) 94%);
+}
+.formulario .enviar {
+  background: linear-gradient(135deg, rgb(100, 109, 255) 13%, rgb(123, 255, 254) 52%, rgb(136, 136, 136) 93%);
 }
 
 .submenu {
