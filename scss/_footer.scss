@@ -1,3 +1,6 @@
+@import "variables";
+
+
 footer{
     grid-area: footer;
     display: flex;
@@ -7,6 +10,11 @@ footer{
     background: linear-gradient(79deg, rgba(16,24,40,1) 0%, rgba(57,69,92,1) 65%);
     .footer{ 
         @include flex;
+    }
+    .arriba{
+        text-decoration: none;
+        list-style: none;
+        background: $color-tema;
     }
 }
 .icon{

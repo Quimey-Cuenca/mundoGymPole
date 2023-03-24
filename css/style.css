@@ -9,9 +9,15 @@ footer {
 }
 footer .footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+footer .arriba {
+  text-decoration: none;
+  list-style: none;
+  background: linear-gradient(135deg, rgb(100, 109, 255) 13%, rgb(123, 255, 254) 52%, rgb(136, 136, 136) 93%);
 }
 
 .icon {
@@ -34,6 +40,7 @@ nav {
   display: flex;
   flex-direction: row;
   background: linear-gradient(56deg, rgb(15, 21, 33) 0%, rgb(64, 74, 93) 46%, rgb(16, 21, 32) 94%);
+  color: black;
 }
 nav img {
   width: 17px;
@@ -44,12 +51,17 @@ nav ul {
 }
 nav ul a {
   text-decoration: none;
+  color: black;
 }
 
 .btn-personalizado {
   font-family: "Bebas Neue", cursive;
   color: black;
   background: linear-gradient(135deg, rgb(100, 109, 255) 13%, rgb(123, 255, 254) 52%, rgb(136, 136, 136) 93%);
+}
+
+.nav-item {
+  border: 5px;
 }
 
 h1 {
@@ -139,6 +151,7 @@ main h3 {
   margin-top: 5pxs;
 }
 .seccion .horarios {
+  color: aliceblue;
   width: 100%;
 }
 .seccion p {
@@ -237,6 +250,10 @@ main {
 
 .historia {
   grid-area: historia;
+}
+
+.horarios {
+  grid-area: horarios;
 }
 
 .grid-index {

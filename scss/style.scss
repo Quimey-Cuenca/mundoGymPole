@@ -10,6 +10,7 @@ nav{
     display: flex;
     flex-direction: row;
     background: $color-fondo;
+    color: black;
     img{
         width: 17px;
         height: 30px;
@@ -18,6 +19,7 @@ nav{
         list-style: none;
         a{
             text-decoration: none;
+            color: black;
         }
     }
 }
@@ -26,6 +28,9 @@ nav{
     color: black;
     background: $color-tema
     
+}
+.nav-item{
+    border: 5px;
 }
 h1{
     text-align: center;
@@ -113,7 +118,7 @@ main{
         margin-top: 5pxs;
     }
     .horarios{
-        
+        color: aliceblue;
         width: 100%;
     }
     p{
@@ -208,6 +213,9 @@ main{
 }
 .historia{
     grid-area: historia;
+}
+.horarios{
+    grid-area: horarios;
 }
 .grid-index{
     display: grid;
