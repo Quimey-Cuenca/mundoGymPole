@@ -150,7 +150,7 @@ section table tr{
         background: $color-tema;
     }
     }
-    
+
 .submenu{
     grid-area: submenu;
     display: flex;
@@ -247,10 +247,10 @@ header{
 .lira{
     grid-area: lira;
 }
-.horarioTela{
+.horariotela{
     grid-area: horariotela;
 }
-.horarioLira{
+.horariolira{
     grid-area: horariolira;
 }
 .gridTela{
@@ -303,6 +303,9 @@ header{
         "horarios horarios horarios"
         "footer footer footer";
     }
+    .boton:hover{
+        transform: scale(1.1);
+            }
     .submenu{
         flex-direction: row;
         img{

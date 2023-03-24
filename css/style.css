@@ -14,7 +14,8 @@ footer .footer {
   align-items: center;
   justify-content: space-between;
 }
-footer .arriba {
+
+.arriba {
   text-decoration: none;
   list-style: none;
   background: linear-gradient(135deg, rgb(100, 109, 255) 13%, rgb(123, 255, 254) 52%, rgb(136, 136, 136) 93%);
@@ -279,11 +280,11 @@ header {
   grid-area: lira;
 }
 
-.horarioTela {
+.horariotela {
   grid-area: horariotela;
 }
 
-.horarioLira {
+.horariolira {
   grid-area: horariolira;
 }
 
@@ -305,6 +306,9 @@ header {
   .grid-index {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "nav nav nav" "main main main" "video video video" "submenu submenu submenu" "queeselpole sport sport" "fitness exotic coreografico" "historia historia historia" "horarios horarios horarios" "footer footer footer";
+  }
+  .boton:hover {
+    transform: scale(1.1);
   }
   .submenu {
     flex-direction: row;

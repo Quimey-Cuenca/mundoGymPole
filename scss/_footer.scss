@@ -11,12 +11,13 @@ footer{
     .footer{ 
         @include flex;
     }
+    }
     .arriba{
         text-decoration: none;
         list-style: none;
         background: $color-tema;
     }
-}
+
 .icon{
     width: 48px;
     height: 48px;
